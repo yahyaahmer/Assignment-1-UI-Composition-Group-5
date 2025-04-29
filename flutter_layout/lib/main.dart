@@ -12,8 +12,15 @@ class MyApp extends StatelessWidget {
       title: appTitle,
       home: Scaffold(
         appBar: AppBar(title: const Text(appTitle)),
-        body: const Center(
-          child: Text('Hello World'),
+        body: const SingleChildScrollView(
+          child: Column(
+            children: [
+              TitleSection(
+                name: 'Oeschinen Lake Campground',
+                location: 'Kandersteg, Switzerland',
+              ),
+            ],
+          ),
         ),
       ),
     );
